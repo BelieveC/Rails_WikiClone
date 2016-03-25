@@ -1,0 +1,11 @@
+%h1 Articles
+
+-@articles.each do |article|
+	%h1= link_to article.title, article
+	%p
+		Published at
+		=article.created_at.strftime("%b %d %Y")
+	%p= truncate(article.content,length: 200) 
+
+%br/
+=link_to "New Article", new_article_path, class: "btn btn-success"
