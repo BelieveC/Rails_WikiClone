@@ -1,5 +1,5 @@
-=simple_form_for @article do |f|
-	=f.input :title, label: "Title", class: "form-control"
-	=f.input :content, label: "Content", class: "form-control"
+=simple_form_for(@article) do |f|
+	=f.input :title, label: "Title", class: "form-control",placeholder:"Title is first Impression"
+	=f.input :content, label: "Content", class: "form-control",placeholder: "What is this article about?"
 	%br/
-	=f.submit 
+	=f.submit class: "btn btn-primary"
