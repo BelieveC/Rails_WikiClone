@@ -1,4 +1,5 @@
 =simple_form_for(@article) do |f|
+	=f.collection_select :category_id, Category.all,:id,:name, {promt: "Choose a Category"},class:"form-control"
 	=f.input :title, label: "Title", class: "form-control",placeholder:"Title is first Impression"
 	=f.input :content, label: "Content", class: "form-control",placeholder: "What is this article about?"
 	%br/

@@ -4,7 +4,11 @@ class ArticlesController < ApplicationController
 	before_action :authenticate_user!, except: [:show,:index]
 
 	def index
-		@articles = Article.all.order("created_at DESC")
+		if params[:category].blank?
+			@articles = Article.all.order("created_at DESC")
+		else
+			@articles = Article.where(category_id: params[:category]).order("created_at DESC")
+		end
 	end
 
 	def show
@@ -45,7 +49,7 @@ class ArticlesController < ApplicationController
 		end
 
 		def articles_params
-			params.require(:article).permit(:title,:content)
+			params.require(:article).permit(:title,:content,:category_id)
 		end
 
 
