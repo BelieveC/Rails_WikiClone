@@ -1,4 +1,7 @@
 %h1= @article.title
 %p= simple_format( @article.content)
 
+
+=link_to "Edit", edit_article_path(@article), class:"btn btn-info"
+=link_to "Delete",@article, method: :delete, data:{confirm:"Are you sure?"}, class:"btn btn-danger"
 =link_to "Back", root_path,class: "btn btn-success"

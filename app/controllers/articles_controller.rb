@@ -10,11 +10,11 @@ class ArticlesController < ApplicationController
 	end
 
 	def new
-		@article = Article.new
+		@article = current_user.articles.build
 	end
 
 	def create
-		@article = Article.new(articles_params)
+		@article = current_user.articles.build(articles_params)
 		if @article.save
 			redirect_to @article
 		else
