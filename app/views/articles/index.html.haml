@@ -1,11 +1,12 @@
 %h1 Articles
 
 -@articles.each do |article|
-	%h1= link_to article.title, article
-	%p
-		Published at
-		=article.created_at.strftime("%b %d %Y")
-	-content = strip_tags(article.content)
-	%p= truncate(content,length: 200) 
+	.article
+		%h1= link_to article.title, article
+		%p
+			Published at
+			=link_to article.created_at.strftime("%b %d %Y"),article
+		-content = strip_tags(article.content)
+		%p= truncate(content,length: 200) 
 
 

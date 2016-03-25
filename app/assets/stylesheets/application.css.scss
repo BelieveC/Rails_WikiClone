@@ -17,6 +17,14 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 
+.article{
+	background-color: #f8f8f8;
+	padding: 10px;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
 
  ul{
  list-style: none;
