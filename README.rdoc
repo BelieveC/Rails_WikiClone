@@ -15,4 +15,19 @@ Above App has Following Features:
 
 4)Different Categories
 
-![alt tag](https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/Show.png)
+
+Following are the Preview images of the App...!
+
+1)Show => ![alt tag](https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/Show.png)
+
+2)Category=> https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/category.png
+
+3)Edit => https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/edit.png
+
+4)Index => https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/index.png
+
+5)Login => https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/login.png
+
+6)New => https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/new.png
+
+7)SignUp => https://raw.githubusercontent.com/BelieveC/Rails_WikiClone/master/WikiClone_Demo_Images/signup.png
