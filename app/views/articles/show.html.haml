@@ -1,4 +1,4 @@
 %h1= @article.title
-%p= @article.content
+%p= simple_format( @article.content)
 
 =link_to "Back", root_path,class: "btn btn-success"
