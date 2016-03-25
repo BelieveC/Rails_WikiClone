@@ -9,4 +9,5 @@
 	%p= truncate(content,length: 200) 
 
 %br/
-=link_to "New Article", new_article_path, class: "btn btn-success"
+= if user_signed_in?
+	=link_to "New Article", new_article_path, class: "btn btn-success"
