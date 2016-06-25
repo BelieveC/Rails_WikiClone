@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
 	
-	before_action :get_article, only: [:edit,:update,:show,:destroy]
+	before_action :get_article, only: [:edit,:update,:show,:destroy,:upvote,:downvote]
 	before_action :authenticate_user!, except: [:show,:index]
 
 	def index
@@ -41,6 +41,16 @@ class ArticlesController < ApplicationController
 	def destroy
 		@article.destroy
 		redirect_to root_path
+	end
+
+	def upvote
+		@article.upvote_by current_user
+		redirect_to :back
+	end
+
+	def downvote
+		@article.downvote_by current_user
+		redirect_to :back
 	end
 
 	private

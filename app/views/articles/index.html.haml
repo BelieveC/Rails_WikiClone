@@ -8,5 +8,12 @@
 			=link_to article.created_at.strftime("%b %d %Y"),article
 		-content = strip_tags(article.content)
 		%p= truncate(content,length: 200) 
-
+		=link_to like_article_path(article),method: :put,class:"btn btn-default btn-sm" do
+			Upvote
+			%span.glyphicon.glyphicon-chevron-up
+			=article.get_upvotes.size
+		=link_to dislike_article_path(article),method: :put,class:"btn btn-default btn-sm" do
+			Downvote
+			%span.glyphicon.glyphicon-chevron-down
+			=article.get_downvotes.size
 
